@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav>
+        <div class="logo"><img src="Shoe logo.png" height="65" width="360"> </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Collections</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <i class="cart"><img src="shopping cart.png" height="27" width="25"></i>
+        </ul>
+    </nav>
+    <div class="flexbox">
+        <div class="left">
+            <div class="big-pic">
+                <img src="Shoe 1.jpg" >
+            </div>
+            <div class="pic">
+                <div class="small-pic">
+                    <img src="Shoe 1.jpg" onclick="showPic(this.src)">
+                </div>
+                <div class="small-pic">
+                    <img src="Shoe 2.jpg" onclick="showPic(this.src)">
+                </div>
+                <div class="small-pic">
+                    <img src="Shoe 3.jpg" onclick="showPic(this.src)">
+                </div>
+                <div class="small-pic">
+                    <img src="Shoe 4.jpg" onclick="showPic(this.src)">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="url">Home > Our Collections > Shoes</div>
+            <div class="pname">Exclusive Collection</div>
+            <div class="ratings">
+                <img src="full star.png" height="15"width="15">
+                <img src="full star.png" height="15"width="15"> 
+                <img src="full star.png" height="15"width="15"> 
+                <img src="full star.png" height="15"width="15"> 
+                <img src="half star.png" height="18"width="18"> 
+            </div>
+            <div class="price"><img src=inr.png height="15"width="15">3599.00</div>
+            <div class="quantity">
+                <p>Quantity</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add To Cart</button>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>

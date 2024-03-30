@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12% ;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 400;
+    color: #E55451;
+    font-family: "Dancing Script", cursive;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    margin: 0 10px;
+    color: #E55451;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #E55451;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.4s ease-in;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+.flexbox{
+    display: flex;
+    margin:20px auto;
+    width: 1000px;
+}
+.left{
+    width: 40%;
+}
+.big-pic{
+    width: 250px;
+}
+.big-pic img{
+    width: inherit;
+}
+.pic{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 15px;
+}
+.small-pic{
+    width: 50px;
+}
+.small-pic img{
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    padding: 2px;
+}
+.small-pic:hover img{
+    transform: scale(1.2);
+}
+.url{
+    font-size: 16px;
+    font-weight: 400;
+    color:#1974D2;
+}
+.pname{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: #E55451;
+}
+.price{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+    color:#a1a3a3;
+}
+.quantity{
+    display: flex;
+}
+.quantity p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.quantity input{
+    width: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+.btn-box{
+    display: flex;
+    margin: 20px 0;
+}
+.btn-box button{
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+
+}
+.cart-btn{
+    margin-right: 20px;
+    background-color: #FFA600;
+}
+.buy-btn{
+    background-color: #FFA600;
+}
+.cart-btn:hover{
+    background-color: #b97903;
+}
+.buy-btn:hover{
+    background-color: #b97903;
+}
+@media only screen and (max-width: 760px){
+    #box {
+        flex-direction: column;
+        
+    }
+    .box1 , .box2 , .box3 {
+        margin: 1rem;
+        border-radius: 10px;
+        width: 80%
+    }
+    
+}
+
